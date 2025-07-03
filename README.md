@@ -14,10 +14,15 @@ Responsive Design: Used Tailwind CSS for mobile and desktop compatibility.
 File Structure
 
 src/App.jsx: Main component with product fetch, cart logic, and rendering.
+
 src/Components/productcard.jsx: Displays individual product cards.
+
 src/Components/navBar.jsx: Shows navbar with cart count.
+
 src/Components/CartModal.jsx: Displays cart items in a modal.
+
 src/main.jsx: Renders the app.
+
 index.html: Includes Tailwind CDN.
 
 Usage
