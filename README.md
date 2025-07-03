@@ -1,12 +1,29 @@
-# React + Vite
+Fake Store E-Commerce App
+-------------------------
+Overview
+---------
+A React-based e-commerce app that fetches products from the Fake Store API, displays them in a responsive grid, allows adding items to a cart with duplicate alerts, and shows cart contents in a modal with remove functionality.
+Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Product Display: Fetches products from https://fakestoreapi.com/products and shows image, title, price, and "Add to Cart" button in a responsive grid (1 column mobile, 2–4 columns larger screens).
+Cart Logic: Adds products to cart, alerts if already added, updates cart count in navbar.
+Navbar: Displays "Fake Store" and cart count with a button to open cart modal.
+Cart Modal: Shows cart items (image, title, price) with "Remove" buttons and a "Close" button.
+Responsive Design: Used Tailwind CSS for mobile and desktop compatibility.
 
-Currently, two official plugins are available:
+File Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+src/App.jsx: Main component with product fetch, cart logic, and rendering.
+src/Components/productcard.jsx: Displays individual product cards.
+src/Components/navBar.jsx: Shows navbar with cart count.
+src/Components/CartModal.jsx: Displays cart items in a modal.
+src/main.jsx: Renders the app.
+index.html: Includes Tailwind CDN.
 
-## Expanding the ESLint configuration
+Usage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Browse products in the grid.
+Click "Add to Cart" to add items (alerts if duplicate).
+Click "Cart" in navbar to view modal with cart items.
+Remove items or close modal.
+Modal opens on "Cart" button click, closes with "Close" button.
